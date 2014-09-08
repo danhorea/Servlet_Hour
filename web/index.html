@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="wrapper" align="center">	
+	<form method="get" action="fusorar">  
+      <table class="punct"> 
+        <tr>
+          <td><label> Longitudinea punctului 1:</label></td>
+          <td>    
+             <input type="number" name="long1" size="5" 
+             required pattern="[0-9]{1,}" max="180" min="0">
+          </td>
+        </tr>  
+        <tr>
+          <td></td>
+          <td>
+            EST <input type="radio" name="tiplong1" value="EST">
+            VEST <input type="radio" name="tiplong1" value="VEST">
+          </td>
+        </tr>
+        </table>
+        
+        <table class="punct"> 
+        <tr>
+          <td><label>Ora in punctul 1:</label></td>
+          <td>    
+             <input type="number" name="ora" size="5" 
+             required pattern="[0-9]{1,}" max="24" min="0">:
+             <input type="number" name="minutul" size="5" 
+             required pattern="[0-9]{1,}" max="59" min="0">
+          </td>
+        </tr>  
+       </table>
+        
+		<table class="punct"> 
+        <tr>
+          <td><label> Longitudinea punctului 2:</label></td>
+          <td>    
+             <input type="number" name="long2" size="5" 
+             required pattern="[0-9]{1,}" max="180" min="0">
+          </td>
+        </tr>  
+        <tr>
+          <td></td>
+          <td>
+            EST <input type="radio" name="tiplong2" value="EST">
+            VEST <input type="radio" name="tiplong2" value="VEST">
+          </td>
+        </tr>
+		</table>
+		<table class="punct">
+		<tr>
+          <td>          
+             <p><input type="submit" value="Calculeaza">
+          </td>
+        </tr>
+        </table>
+        
+      <input type="hidden" name="tip" value="text/html" >
+  </form>
+ </div>
+
+</body>
+</html>

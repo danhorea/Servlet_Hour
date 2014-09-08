@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+body{
+background-color:#DADBD6;
+}
+
+.wrapper{
+	width: 400px;
+	height:220px;
+	background-color: rgb(70, 70, 70);
+	font-family: 'OpenSansRegular',Tahoma;
+	color: white;
+	font-size: 12px;
+	align:center;
+	color:white;
+	position: inherit;
+	margin: auto;
+	
+}
+.punct{
+	border: medium;
+	border-style: double;
+	border-color: gray;
+}
